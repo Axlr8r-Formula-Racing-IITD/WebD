@@ -1,5 +1,6 @@
-Transparent Landing topics(Solved)
 Navbar snap and text overlap on some pages
 Navbar logo not getting restored
 
 Images in Landings page
+Merge all depts
+Gallery page
