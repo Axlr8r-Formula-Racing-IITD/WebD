@@ -31,13 +31,13 @@
                 let ddElements = $(".dd-menu ul li a");
                 let image = $(".brand-nav img");
                 let image2 = document.querySelector(".brand-nav img")
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                listElements.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
-                listLinks.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
-                brand.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
-                image.toggleClass('scrolledImg', $(this).scrollTop() > $nav.height());
-                ddElements.toggleClass('scrolledNav', $(this).scrollTop() > $nav.height());
-                if ($(this).scrollTop() > $nav.height()) {
+                $nav.toggleClass('scrolled', 5*$(this).scrollTop() > $nav.height());
+                listElements.toggleClass('scrolledList', 5*$(this).scrollTop() > $nav.height());
+                listLinks.toggleClass('scrolledList', 5*$(this).scrollTop() > $nav.height());
+                brand.toggleClass('scrolledList', 5*$(this).scrollTop() > $nav.height());
+                image.toggleClass('scrolledImg', 5*$(this).scrollTop() > $nav.height());
+                ddElements.toggleClass('scrolledNav', 5*$(this).scrollTop() > $nav.height());
+                if (5*$(this).scrollTop() > $nav.height()) {
                     image2.setAttribute("src", "Photos/picture1-1-354x178.png");
                 } else {
                     image2.setAttribute("src", "Photos/Logo.png");
